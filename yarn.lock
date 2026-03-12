@@ -644,6 +644,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fontsource-variable/geist@npm:^5.2.8":
+  version: 5.2.8
+  resolution: "@fontsource-variable/geist@npm:5.2.8"
+  checksum: 10c0/be455d4498ab0323b45d8bb37698dca810ae761643e85583605e18fc4175dec9b5ca518193673544b32a096cb3073fec0df0ef5cec92ce6ab0f58b29cd7ba596
+  languageName: node
+  linkType: hard
+
 "@gar/promise-retry@npm:^1.0.0":
   version: 1.0.2
   resolution: "@gar/promise-retry@npm:1.0.2"
@@ -3542,6 +3549,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "axon@workspace:."
   dependencies:
+    "@fontsource-variable/geist": "npm:^5.2.8"
     "@hookform/resolvers": "npm:^5.2.2"
     "@tailwindcss/vite": "npm:^4.2.1"
     "@tanstack/react-query": "npm:^5.90.21"
@@ -3577,7 +3585,7 @@ __metadata:
     remark-parse: "npm:^11.0.0"
     remark-rehype: "npm:^11.1.2"
     reveal.js: "npm:^5.2.1"
-    shadcn: "npm:^3.8.5"
+    shadcn: "npm:^4.0.5"
     tailwind-merge: "npm:^3.5.0"
     tailwindcss: "npm:^4.2.1"
     tw-animate-css: "npm:^1.4.0"
@@ -7756,9 +7764,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shadcn@npm:^3.8.5":
-  version: 3.8.5
-  resolution: "shadcn@npm:3.8.5"
+"shadcn@npm:^4.0.5":
+  version: 4.0.5
+  resolution: "shadcn@npm:4.0.5"
   dependencies:
     "@antfu/ni": "npm:^25.0.0"
     "@babel/core": "npm:^7.28.0"
@@ -7797,7 +7805,7 @@ __metadata:
     zod-to-json-schema: "npm:^3.24.6"
   bin:
     shadcn: dist/index.js
-  checksum: 10c0/86401246725399fa9ce61721a03136b0466e2cb18f888d35f706926425bbfa08468204ec2673317c7d500939eb71d07bb410927acb54a79049ef726f5453e2ea
+  checksum: 10c0/f303676e46ce0f6438e4b8823928bd2b0fbda43f7625fd6b0dec7394c0a8f3958941ba75884d437175417906e2340003054d67adbf1b370a6d113e2b3e880718
   languageName: node
   linkType: hard
 
