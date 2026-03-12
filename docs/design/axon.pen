@@ -1,0 +1,1921 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "btn-inactive",
+      "x": -600,
+      "y": -14,
+      "name": "按钮-未激活",
+      "reusable": true,
+      "width": 70,
+      "height": 28,
+      "fill": "$color.bg.tertiary",
+      "cornerRadius": 6,
+      "stroke": {
+        "thickness": 1,
+        "fill": "$color.border"
+      },
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "btn-inactive-label",
+          "fill": "$color.text.secondary",
+          "content": "按钮",
+          "fontFamily": "$font.family",
+          "fontSize": 13,
+          "fontWeight": "500"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "btn-active",
+      "x": -600,
+      "y": 50,
+      "name": "按钮-激活",
+      "reusable": true,
+      "width": 70,
+      "height": 28,
+      "fill": "$color.accent",
+      "cornerRadius": 6,
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "btn-active-label",
+          "fill": "$color.accent.text",
+          "content": "按钮",
+          "fontFamily": "$font.family",
+          "fontSize": 13,
+          "fontWeight": "500"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "resizable-divider",
+      "x": -600,
+      "y": 100,
+      "name": "可拖拽分隔线",
+      "reusable": true,
+      "width": 6,
+      "height": 200,
+      "fill": "$color.bg",
+      "stroke": {
+        "thickness": {
+          "right": 1,
+          "left": 1
+        },
+        "fill": "$color.divider"
+      },
+      "layout": "vertical",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "divider-handle",
+          "name": "拖动手柄",
+          "width": 4,
+          "height": 32,
+          "fill": "$color.divider",
+          "cornerRadius": 2
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "tab-active",
+      "x": -600,
+      "y": 340,
+      "name": "标签-激活",
+      "reusable": true,
+      "width": 120,
+      "height": 36,
+      "stroke": {
+        "thickness": {
+          "bottom": 2
+        },
+        "fill": "$color.accent"
+      },
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "tab-active-label",
+          "fill": "$color.text",
+          "content": "标签",
+          "fontFamily": "$font.family",
+          "fontSize": 13,
+          "fontWeight": "500"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "tab-inactive",
+      "x": -600,
+      "y": 405,
+      "name": "标签-未激活",
+      "reusable": true,
+      "width": 120,
+      "height": 36,
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "tab-inactive-label",
+          "fill": "$color.text.muted",
+          "content": "标签",
+          "fontFamily": "$font.family",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "btn-group-expanded",
+      "x": -600,
+      "y": 470,
+      "name": "按钮组-平铺状态",
+      "reusable": true,
+      "width": 220,
+      "height": 32,
+      "gap": 4,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "btn-group-item-1",
+          "width": 70,
+          "height": 28,
+          "fill": "$color.bg.tertiary",
+          "cornerRadius": 6,
+          "stroke": {
+            "thickness": 1,
+            "fill": "$color.border"
+          },
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "btn-group-item-1-label",
+              "fill": "$color.text.secondary",
+              "content": "新建",
+              "fontFamily": "$font.family",
+              "fontSize": 12,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "btn-group-item-2",
+          "width": 70,
+          "height": 28,
+          "fill": "$color.bg.tertiary",
+          "cornerRadius": 6,
+          "stroke": {
+            "thickness": 1,
+            "fill": "$color.border"
+          },
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "btn-group-item-2-label",
+              "fill": "$color.text.secondary",
+              "content": "保存",
+              "fontFamily": "$font.family",
+              "fontSize": 12,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "btn-group-item-3",
+          "width": 70,
+          "height": 28,
+          "fill": "$color.bg.tertiary",
+          "cornerRadius": 6,
+          "stroke": {
+            "thickness": 1,
+            "fill": "$color.border"
+          },
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "btn-group-item-3-label",
+              "fill": "$color.text.secondary",
+              "content": "删除",
+              "fontFamily": "$font.family",
+              "fontSize": 12,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "btn-group-collapsed",
+      "x": -600,
+      "y": 515,
+      "name": "按钮组-缩放状态",
+      "reusable": true,
+      "width": 36,
+      "height": 32,
+      "fill": "$color.bg.tertiary",
+      "cornerRadius": 6,
+      "stroke": {
+        "thickness": 1,
+        "fill": "$color.border"
+      },
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "btn-group-collapsed-icon",
+          "fill": "$color.text.secondary",
+          "content": "⋮",
+          "fontFamily": "$font.family",
+          "fontSize": 14,
+          "fontWeight": "bold"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "btn-group-dropdown",
+      "x": -600,
+      "y": 555,
+      "name": "按钮组-下拉菜单",
+      "reusable": true,
+      "width": 120,
+      "height": 96,
+      "fill": "#fffdfdff",
+      "cornerRadius": 8,
+      "stroke": {
+        "thickness": 1,
+        "fill": "$color.border"
+      },
+      "layout": "vertical",
+      "gap": 2,
+      "children": [
+        {
+          "type": "frame",
+          "id": "btn-group-dropdown-item-1",
+          "width": "fill_container",
+          "height": 28,
+          "fill": "$color.bg.tertiary",
+          "cornerRadius": 4,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "btn-group-dropdown-item-1-label",
+              "fill": "$color.text.secondary",
+              "content": "新建",
+              "fontFamily": "$font.family",
+              "fontSize": 12,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "btn-group-dropdown-item-2",
+          "width": "fill_container",
+          "height": 28,
+          "fill": "$color.bg.tertiary",
+          "cornerRadius": 4,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "btn-group-dropdown-item-2-label",
+              "fill": "$color.text.secondary",
+              "content": "保存",
+              "fontFamily": "$font.family",
+              "fontSize": 12,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "btn-group-dropdown-item-3",
+          "width": "fill_container",
+          "height": 28,
+          "fill": "$color.bg.tertiary",
+          "cornerRadius": 4,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "btn-group-dropdown-item-3-label",
+              "fill": "$color.text.secondary",
+              "content": "删除",
+              "fontFamily": "$font.family",
+              "fontSize": 12,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "tab-item-with-close",
+      "x": -600,
+      "y": 670,
+      "name": "标签项-带关闭按钮",
+      "reusable": true,
+      "width": 140,
+      "height": 32,
+      "fill": "$color.bg.tertiary",
+      "cornerRadius": 6,
+      "stroke": {
+        "thickness": 1,
+        "fill": "$color.border"
+      },
+      "padding": [
+        8,
+        12
+      ],
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "tab-item-label",
+          "fill": "$color.text",
+          "content": "文档.md",
+          "fontFamily": "$font.family",
+          "fontSize": 12,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "tab-item-close-btn",
+          "width": 16,
+          "height": 16,
+          "fill": "$color.bg",
+          "cornerRadius": 4,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "tab-item-close-icon",
+              "fill": "$color.text.muted",
+              "content": "×",
+              "fontFamily": "$font.family",
+              "fontSize": 12,
+              "fontWeight": "bold"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "tab-group",
+      "x": -600,
+      "y": 715,
+      "name": "标签组",
+      "reusable": true,
+      "width": 480,
+      "height": 40,
+      "fill": "$color.bg",
+      "gap": 4,
+      "padding": [
+        4,
+        8
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "id": "tab-group-item-1",
+          "type": "ref",
+          "ref": "tab-item-with-close",
+          "descendants": {
+            "tab-item-label": {
+              "content": "文档1.md"
+            }
+          }
+        },
+        {
+          "id": "tab-group-item-2",
+          "type": "ref",
+          "ref": "tab-item-with-close",
+          "descendants": {
+            "tab-item-label": {
+              "content": "文档2.md"
+            }
+          }
+        },
+        {
+          "id": "tab-group-item-3",
+          "type": "ref",
+          "ref": "tab-item-with-close",
+          "descendants": {
+            "tab-item-label": {
+              "content": "文档3.md"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "tab-group-more-btn",
+          "width": 32,
+          "height": 32,
+          "fill": "$color.bg.tertiary",
+          "cornerRadius": 6,
+          "stroke": {
+            "thickness": 1,
+            "fill": "$color.border"
+          },
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "tab-group-more-icon",
+              "fill": "$color.text.secondary",
+              "content": "⋯",
+              "fontFamily": "$font.family",
+              "fontSize": 14,
+              "fontWeight": "bold"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "tab-group-dropdown",
+      "x": -600,
+      "y": 765,
+      "name": "标签组-下拉菜单",
+      "reusable": true,
+      "width": 160,
+      "height": 120,
+      "fill": "#ffffffff",
+      "cornerRadius": 8,
+      "stroke": {
+        "thickness": 1,
+        "fill": "$color.border"
+      },
+      "layout": "vertical",
+      "gap": 2,
+      "children": [
+        {
+          "type": "frame",
+          "id": "tab-group-dropdown-item-1",
+          "width": "fill_container",
+          "height": 32,
+          "fill": "$color.bg.tertiary",
+          "cornerRadius": 4,
+          "padding": [
+            8,
+            12
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "tab-group-dropdown-item-1-label",
+              "fill": "$color.text",
+              "content": "文档4.md",
+              "fontFamily": "$font.family",
+              "fontSize": 12,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "tab-group-dropdown-item-1-close",
+              "fill": "$color.text.muted",
+              "content": "×",
+              "fontFamily": "$font.family",
+              "fontSize": 12,
+              "fontWeight": "bold"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tab-group-dropdown-item-2",
+          "width": "fill_container",
+          "height": 32,
+          "fill": "$color.bg.tertiary",
+          "cornerRadius": 4,
+          "padding": [
+            8,
+            12
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "tab-group-dropdown-item-2-label",
+              "fill": "$color.text",
+              "content": "文档5.md",
+              "fontFamily": "$font.family",
+              "fontSize": 12,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "tab-group-dropdown-item-2-close",
+              "fill": "$color.text.muted",
+              "content": "×",
+              "fontFamily": "$font.family",
+              "fontSize": 12,
+              "fontWeight": "bold"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tab-group-dropdown-item-3",
+          "width": "fill_container",
+          "height": 32,
+          "fill": "$color.bg.tertiary",
+          "cornerRadius": 4,
+          "padding": [
+            8,
+            12
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "tab-group-dropdown-item-3-label",
+              "fill": "$color.text",
+              "content": "文档6.md",
+              "fontFamily": "$font.family",
+              "fontSize": 12,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "tab-group-dropdown-item-3-close",
+              "fill": "$color.text.muted",
+              "content": "×",
+              "fontFamily": "$font.family",
+              "fontSize": 12,
+              "fontWeight": "bold"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "document_view",
+      "x": 0,
+      "y": 0,
+      "name": "文档视图 (MainLayout - Document)",
+      "clip": true,
+      "width": 1280,
+      "height": 800,
+      "fill": "$color.bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "doc-titlebar",
+          "name": "TitleBar",
+          "width": "fill_container",
+          "fill": "$color.bg",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$color.border"
+          },
+          "padding": [
+            0,
+            16
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "doc-titlebar-title",
+              "name": "Title",
+              "fill": "$color.text",
+              "content": "Axon",
+              "fontFamily": "$font.family",
+              "fontSize": 16,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "doc-titlebar-buttons",
+              "name": "ButtonGroup",
+              "gap": 6,
+              "children": [
+                {
+                  "id": "doc-btn-doc",
+                  "type": "ref",
+                  "ref": "btn-active",
+                  "descendants": {
+                    "btn-active-label": {
+                      "content": "文档"
+                    }
+                  }
+                },
+                {
+                  "id": "doc-btn-mind",
+                  "type": "ref",
+                  "ref": "btn-inactive"
+                },
+                {
+                  "id": "doc-btn-show",
+                  "type": "ref",
+                  "ref": "btn-inactive"
+                }
+              ]
+            },
+            {
+              "id": "FF4Xt",
+              "type": "ref",
+              "ref": "resizable-divider",
+              "height": "fill_container",
+              "y": 0,
+              "x": 559
+            },
+            {
+              "type": "frame",
+              "id": "doc-tabbar",
+              "name": "TabGroup",
+              "width": 559,
+              "fill": "$color.bg.secondary",
+              "stroke": {
+                "thickness": {
+                  "bottom": 1
+                },
+                "fill": "$color.border"
+              },
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "doc-tab1",
+                  "type": "ref",
+                  "ref": "tab-active",
+                  "descendants": {
+                    "tab-active-label": {
+                      "content": "项目概述.md"
+                    }
+                  }
+                },
+                {
+                  "id": "doc-tab2",
+                  "type": "ref",
+                  "ref": "tab-inactive",
+                  "descendants": {
+                    "tab-inactive-label": {
+                      "content": "技术架构.md"
+                    }
+                  }
+                },
+                {
+                  "id": "doc-tab3",
+                  "type": "ref",
+                  "ref": "tab-inactive",
+                  "descendants": {
+                    "tab-inactive-label": {
+                      "content": "功能需求.md"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "doc-hero",
+          "name": "Hero",
+          "width": "fill_container",
+          "height": "fill_container",
+          "children": [
+            {
+              "type": "frame",
+              "id": "doc-nav-panel",
+              "name": "NavigationPanel (MarkdownView)",
+              "width": 560,
+              "height": "fill_container",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "doc-toc",
+                  "name": "目录栏 (TOC)",
+                  "width": 200,
+                  "height": "fill_container",
+                  "fill": "$color.bg.secondary",
+                  "stroke": {
+                    "thickness": {
+                      "right": 1
+                    },
+                    "fill": "$color.border"
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "doc-toc-heading",
+                      "fill": "$color.text.secondary",
+                      "content": "目录",
+                      "fontFamily": "$font.family",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "doc-toc-i1",
+                      "fill": "$color.accent",
+                      "content": "● 一、项目概述",
+                      "fontFamily": "$font.family",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "doc-toc-i2",
+                      "fill": "$color.text",
+                      "content": "  二、技术架构",
+                      "fontFamily": "$font.family",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "doc-toc-i3",
+                      "fill": "$color.text",
+                      "content": "  三、功能需求",
+                      "fontFamily": "$font.family",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "doc-toc-i4",
+                      "fill": "$color.text",
+                      "content": "  四、非功能性需求",
+                      "fontFamily": "$font.family",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "doc-toc-i5",
+                      "fill": "$color.text",
+                      "content": "  五、数据模型",
+                      "fontFamily": "$font.family",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "doc-preview",
+                  "name": "文档预览 (Rendered)",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "$color.bg.tertiary",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": [
+                    24,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "doc-preview-h1",
+                      "fill": "$color.text",
+                      "content": "项目需求分析",
+                      "fontFamily": "$font.family",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "doc-preview-h2",
+                      "fill": "$color.text",
+                      "content": "一、项目概述",
+                      "fontFamily": "$font.family",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "doc-preview-p1",
+                      "fill": "$color.text.secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Axon 是一款基于 Tauri v2 + React 19 构建的跨平台个人代码知识库桌面应用。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font.family",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "doc-preview-p2",
+                      "fill": "$color.text.secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "它提供「一份 Markdown，多种视图」的文档处理体验，并通过 MCP 协议将个人知识库暴露给外部 AI 工具。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font.family",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "doc-divider",
+              "type": "ref",
+              "ref": "resizable-divider",
+              "height": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "doc-editor-panel",
+              "name": "EditorPanel",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "$color.bg",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "doc-editor-toolbar",
+                  "name": "编辑器工具栏",
+                  "width": "fill_container",
+                  "height": 32,
+                  "fill": "$color.bg.secondary",
+                  "cornerRadius": 6,
+                  "gap": 16,
+                  "padding": [
+                    0,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "doc-toolbar-bold",
+                      "fill": "$color.text.secondary",
+                      "content": "B",
+                      "fontFamily": "$font.family",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "doc-toolbar-italic",
+                      "fill": "$color.text.secondary",
+                      "content": "I",
+                      "fontFamily": "$font.family",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    },
+                    {
+                      "type": "text",
+                      "id": "doc-toolbar-code",
+                      "fill": "$color.text.secondary",
+                      "content": "</>",
+                      "fontFamily": "$font.family",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "doc-toolbar-link",
+                      "fill": "$color.text.secondary",
+                      "content": "🔗",
+                      "fontFamily": "$font.family",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "doc-editor-content",
+                  "name": "Tiptap 编辑区域",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "doc-editor-h1",
+                      "fill": "$color.text",
+                      "content": "# 项目需求分析",
+                      "fontFamily": "$font.family",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "doc-editor-h2",
+                      "fill": "$color.text",
+                      "content": "## 一、项目概述",
+                      "fontFamily": "$font.family",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "doc-editor-body",
+                      "fill": "$color.text.secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Axon 是一款基于 Tauri v2 + React 19 构建的**跨平台个人代码知识库桌面应用**。它提供「一份 Markdown，多种视图」的文档处理体验...",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$font.family",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "doc-editor-cursor",
+                      "name": "光标",
+                      "fill": "$color.accent",
+                      "width": 2,
+                      "height": 20
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "mindmap_view",
+      "x": 1380,
+      "y": 0,
+      "name": "脑图视图 (MainLayout - Mindmap)",
+      "clip": true,
+      "width": 1280,
+      "height": 800,
+      "fill": "$color.bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "mind-titlebar",
+          "name": "TitleBar",
+          "width": "fill_container",
+          "fill": "$color.bg",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$color.border"
+          },
+          "padding": [
+            0,
+            16
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "mind-titlebar-title",
+              "name": "Title",
+              "fill": "$color.text",
+              "content": "Axon",
+              "fontFamily": "$font.family",
+              "fontSize": 16,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "mind-titlebar-buttons",
+              "name": "ButtonGroup",
+              "gap": 6,
+              "children": [
+                {
+                  "id": "mind-btn-doc",
+                  "type": "ref",
+                  "ref": "btn-inactive"
+                },
+                {
+                  "id": "mind-btn-mind",
+                  "type": "ref",
+                  "ref": "btn-active",
+                  "descendants": {
+                    "btn-active-label": {
+                      "content": "脑图"
+                    }
+                  }
+                },
+                {
+                  "id": "mind-btn-show",
+                  "type": "ref",
+                  "ref": "btn-inactive"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "mind-tabbar",
+          "name": "TabGroup",
+          "width": "fill_container",
+          "fill": "$color.bg.secondary",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$color.border"
+          },
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "id": "mind-tab1",
+              "type": "ref",
+              "ref": "tab-active",
+              "descendants": {
+                "tab-active-label": {
+                  "content": "项目概述.md"
+                }
+              }
+            },
+            {
+              "id": "mind-tab2",
+              "type": "ref",
+              "ref": "tab-inactive",
+              "descendants": {
+                "tab-inactive-label": {
+                  "content": "技术架构.md"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "mind-hero",
+          "name": "Hero",
+          "width": "fill_container",
+          "height": "fill_container",
+          "children": [
+            {
+              "type": "frame",
+              "id": "mind-nav-panel",
+              "name": "NavigationPanel (MindmapView)",
+              "width": 640,
+              "height": "fill_container",
+              "fill": "$color.bg.secondary",
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mind-canvas-label",
+                  "fill": "$color.text.muted",
+                  "content": "Markmap / ReactFlow Canvas",
+                  "fontFamily": "$font.family",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "mind-center-node",
+                  "name": "中心节点",
+                  "width": 140,
+                  "height": 44,
+                  "fill": "$color.mindmap.node.bg",
+                  "cornerRadius": 22,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "$color.accent"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mind-center-label",
+                      "fill": "$color.accent",
+                      "content": "Axon 项目",
+                      "fontFamily": "$font.family",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mind-branch-group",
+                  "name": "分支节点组",
+                  "gap": 24,
+                  "padding": [
+                    20,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "mind-branch-1",
+                      "width": 100,
+                      "height": 32,
+                      "fill": "$color.bg",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$color.border"
+                      },
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mind-b1-text",
+                          "fill": "$color.text",
+                          "content": "技术架构",
+                          "fontFamily": "$font.family",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mind-branch-2",
+                      "width": 100,
+                      "height": 32,
+                      "fill": "$color.bg",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$color.border"
+                      },
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mind-b2-text",
+                          "fill": "$color.text",
+                          "content": "功能需求",
+                          "fontFamily": "$font.family",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mind-branch-3",
+                      "width": 100,
+                      "height": 32,
+                      "fill": "$color.bg",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$color.border"
+                      },
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mind-b3-text",
+                          "fill": "$color.text",
+                          "content": "数据模型",
+                          "fontFamily": "$font.family",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mind-divider",
+              "type": "ref",
+              "ref": "resizable-divider",
+              "height": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "mind-editor-panel",
+              "name": "EditorPanel",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "$color.bg",
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mind-editor-h1",
+                  "fill": "$color.text",
+                  "content": "# 项目需求分析",
+                  "fontFamily": "$font.family",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "mind-editor-h2",
+                  "fill": "$color.text",
+                  "content": "## 一、项目概述",
+                  "fontFamily": "$font.family",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "mind-editor-body",
+                  "fill": "$color.text.secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Axon 是一款基于 Tauri v2 + React 19 构建的**跨平台个人代码知识库桌面应用**...",
+                  "lineHeight": 1.7,
+                  "fontFamily": "$font.family",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "presentation_view",
+      "x": 2760,
+      "y": 0,
+      "name": "演示视图 (ShowcaseLayout)",
+      "clip": true,
+      "width": 1280,
+      "height": 800,
+      "fill": "$color.bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "pres-titlebar",
+          "name": "TitleBar (精简版)",
+          "width": "fill_container",
+          "fill": "$color.bg",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$color.border"
+          },
+          "padding": [
+            0,
+            16
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "pres-titlebar-title",
+              "name": "Title",
+              "fill": "$color.text",
+              "content": "Axon",
+              "fontFamily": "$font.family",
+              "fontSize": 16,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "pres-titlebar-buttons",
+              "name": "ButtonGroup",
+              "gap": 6,
+              "children": [
+                {
+                  "id": "pres-btn-doc",
+                  "type": "ref",
+                  "ref": "btn-inactive"
+                },
+                {
+                  "id": "pres-btn-mind",
+                  "type": "ref",
+                  "ref": "btn-inactive"
+                },
+                {
+                  "id": "pres-btn-show",
+                  "type": "ref",
+                  "ref": "btn-active",
+                  "descendants": {
+                    "btn-active-label": {
+                      "content": "演示"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pres-showcase",
+          "name": "ShowcaseView",
+          "width": "fill_container",
+          "height": "fill_container",
+          "fill": "$color.bg.secondary",
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "pres-slide",
+              "name": "RevealPresentation 幻灯片",
+              "width": 960,
+              "height": 600,
+              "fill": "$color.bg",
+              "cornerRadius": 8,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000018",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 24
+              },
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                80,
+                100
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "pres-slide-title",
+                  "name": "幻灯片标题",
+                  "fill": "$color.text",
+                  "content": "Axon 项目概述",
+                  "fontFamily": "$font.family",
+                  "fontSize": 36,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2,
+                  "id": "pres-slide-divider",
+                  "fill": "$color.accent",
+                  "width": 80,
+                  "height": 3
+                },
+                {
+                  "type": "frame",
+                  "id": "pres-slide-body",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pres-p1",
+                      "fill": "$color.text.secondary",
+                      "content": "•  跨平台个人代码知识库桌面应用",
+                      "fontFamily": "$font.family",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pres-p2",
+                      "fill": "$color.text.secondary",
+                      "content": "•  一份 Markdown，多种视图",
+                      "fontFamily": "$font.family",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pres-p3",
+                      "fill": "$color.text.secondary",
+                      "content": "•  MCP 协议集成，AI 原生知识库",
+                      "fontFamily": "$font.family",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "pres-page-indicator",
+              "fill": "$color.text.muted",
+              "content": "1 / 5",
+              "fontFamily": "$font.family",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "document_view_dark",
+      "x": 0,
+      "y": 900,
+      "name": "文档视图 Dark Mode",
+      "theme": {
+        "mode": "dark"
+      },
+      "clip": true,
+      "width": 1280,
+      "height": 800,
+      "fill": "$color.bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "dark-doc-titlebar",
+          "name": "TitleBar",
+          "width": "fill_container",
+          "fill": "$color.bg",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$color.border"
+          },
+          "padding": [
+            0,
+            16
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "dark-doc-titlebar-title",
+              "fill": "$color.text",
+              "content": "Axon",
+              "fontFamily": "$font.family",
+              "fontSize": 16,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "dark-doc-titlebar-buttons",
+              "name": "ButtonGroup",
+              "gap": 6,
+              "children": [
+                {
+                  "id": "dark-doc-btn-doc",
+                  "type": "ref",
+                  "ref": "btn-active",
+                  "descendants": {
+                    "btn-active-label": {
+                      "content": "文档"
+                    }
+                  }
+                },
+                {
+                  "id": "dark-doc-btn-mind",
+                  "type": "ref",
+                  "ref": "btn-inactive"
+                },
+                {
+                  "id": "dark-doc-btn-show",
+                  "type": "ref",
+                  "ref": "btn-inactive"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dark-doc-tabbar",
+          "name": "TabGroup",
+          "width": "fill_container",
+          "fill": "$color.bg.secondary",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$color.border"
+          },
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "id": "dark-doc-tab1",
+              "type": "ref",
+              "ref": "tab-active",
+              "descendants": {
+                "tab-active-label": {
+                  "content": "项目概述.md"
+                }
+              }
+            },
+            {
+              "id": "dark-doc-tab2",
+              "type": "ref",
+              "ref": "tab-inactive",
+              "descendants": {
+                "tab-inactive-label": {
+                  "content": "技术架构.md"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dark-doc-hero",
+          "name": "Hero",
+          "width": "fill_container",
+          "height": "fill_container",
+          "children": [
+            {
+              "type": "frame",
+              "id": "dark-doc-nav-panel",
+              "name": "NavigationPanel",
+              "width": 560,
+              "height": "fill_container",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dark-doc-toc",
+                  "name": "目录栏",
+                  "width": 200,
+                  "height": "fill_container",
+                  "fill": "$color.bg.secondary",
+                  "stroke": {
+                    "thickness": {
+                      "right": 1
+                    },
+                    "fill": "$color.border"
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dark-doc-toc-heading",
+                      "fill": "$color.text.secondary",
+                      "content": "目录",
+                      "fontFamily": "$font.family",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dark-doc-toc-i1",
+                      "fill": "$color.accent",
+                      "content": "● 一、项目概述",
+                      "fontFamily": "$font.family",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dark-doc-toc-i2",
+                      "fill": "$color.text",
+                      "content": "  二、技术架构",
+                      "fontFamily": "$font.family",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dark-doc-preview",
+                  "name": "文档预览",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "$color.bg.tertiary",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": [
+                    24,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dark-doc-preview-h1",
+                      "fill": "$color.text",
+                      "content": "项目需求分析",
+                      "fontFamily": "$font.family",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dark-doc-preview-p1",
+                      "fill": "$color.text.secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Axon 是一款基于 Tauri v2 + React 19 构建的跨平台个人代码知识库桌面应用。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font.family",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dark-doc-divider",
+              "type": "ref",
+              "ref": "resizable-divider",
+              "height": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "dark-doc-editor-panel",
+              "name": "EditorPanel",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "$color.bg",
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dark-doc-editor-h1",
+                  "fill": "$color.text",
+                  "content": "# 项目需求分析",
+                  "fontFamily": "$font.family",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "dark-doc-editor-body",
+                  "fill": "$color.text.secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Axon 是一款基于 Tauri v2 + React 19 构建的**跨平台个人代码知识库桌面应用**...",
+                  "lineHeight": 1.7,
+                  "fontFamily": "$font.family",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": {
+    "mode": [
+      "light",
+      "dark"
+    ]
+  },
+  "variables": {
+    "color.bg": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#0A0A0A",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color.bg.secondary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FAFAFA",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#141414",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color.bg.tertiary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#F5F5F5",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#1C1C1C",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color.border": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#E5E5E5",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#2E2E2E",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color.divider": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#D4D4D4",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#404040",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color.text": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#171717",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#FAFAFA",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color.text.secondary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#525252",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#A3A3A3",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color.text.muted": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#A3A3A3",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#737373",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "color.accent": {
+      "type": "color",
+      "value": "#2563EB"
+    },
+    "color.accent.light": {
+      "type": "color",
+      "value": "#DBEAFE"
+    },
+    "color.accent.text": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "color.mindmap.node.bg": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#DBEAFE",
+          "theme": {
+            "mode": "light"
+          }
+        },
+        {
+          "value": "#1E3A5F",
+          "theme": {
+            "mode": "dark"
+          }
+        }
+      ]
+    },
+    "spacing.titlebar": {
+      "type": "number",
+      "value": 48
+    },
+    "spacing.tabbar": {
+      "type": "number",
+      "value": 36
+    },
+    "font.family": {
+      "type": "string",
+      "value": "Inter"
+    }
+  }
+}
