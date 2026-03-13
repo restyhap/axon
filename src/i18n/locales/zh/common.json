@@ -1,0 +1,19 @@
+{
+  "app": {
+    "name": "Axon"
+  },
+  "header": {
+    "selectLanguage": "选择语言",
+    "switchToLightTheme": "切换到浅色主题",
+    "switchToDarkTheme": "切换到深色主题"
+  },
+  "view": {
+    "editor": "编辑",
+    "mindmap": "脑图",
+    "presentation": "演示"
+  },
+  "layout": {
+    "navigation": "导航区",
+    "footer": "底部区域"
+  }
+}

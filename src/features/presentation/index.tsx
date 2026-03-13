@@ -1,11 +1,17 @@
 /**
- * 演示视图 (基于 reveal.js)
+ * 演示视图组件
+ * 用于全屏演示文档内容
  */
-export default function PresentationView() {
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+
+const PresentationView: React.FC = () => {
+  const { t } = useTranslation();
   return (
-    <div className="flex-1 p-4">
-      <p className="text-muted-foreground">演示视图 - 待实现</p>
+    <div className="h-full flex items-center justify-center">
+      <h1 className="text-2xl font-bold text-muted-foreground">{t('view.presentation')}</h1>
     </div>
   );
-}
+};
 
+export default PresentationView;

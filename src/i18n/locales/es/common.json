@@ -1,0 +1,19 @@
+{
+  "app": {
+    "name": "Axon"
+  },
+  "header": {
+    "selectLanguage": "Seleccionar idioma",
+    "switchToLightTheme": "Cambiar al tema claro",
+    "switchToDarkTheme": "Cambiar al tema oscuro"
+  },
+  "view": {
+    "editor": "Editor",
+    "mindmap": "Mapa mental",
+    "presentation": "Presentación"
+  },
+  "layout": {
+    "navigation": "Navegación",
+    "footer": "Pie de página"
+  }
+}

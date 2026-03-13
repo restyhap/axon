@@ -14,7 +14,10 @@
       {
         "title": "axon",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "decorations": true,
+        "titleBarStyle": "Transparent",
+        "hiddenTitle": true
       }
     ],
     "security": {

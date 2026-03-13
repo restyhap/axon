@@ -1,11 +1,17 @@
 /**
- * Markdown 编辑器视图 (基于 Tiptap)
+ * 编辑器视图组件
+ * 用于编辑 Markdown 文档的主视图
  */
-export default function EditorView() {
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+
+const EditorView: React.FC = () => {
+  const { t } = useTranslation();
   return (
-    <div className="flex-1 p-4">
-      <p className="text-muted-foreground">Markdown 编辑器 - 待实现</p>
+    <div className="h-full flex items-center justify-center">
+      <h1 className="text-2xl font-bold text-muted-foreground">{t('view.editor')}</h1>
     </div>
   );
-}
+};
 
+export default EditorView;
