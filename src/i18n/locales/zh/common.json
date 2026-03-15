@@ -10,10 +10,62 @@
   "view": {
     "editor": "编辑",
     "mindmap": "脑图",
-    "presentation": "演示"
+    "presentation": "演示",
+    "knowledgeBase": "知识库"
   },
   "layout": {
     "navigation": "导航区",
     "footer": "底部区域"
+  },
+  "mindmap": {
+    "empty": "点击添加知识库文件夹",
+    "addFolderHint": "脑图将自动展示完整目录结构",
+    "fit": "适应视图",
+    "zoomIn": "放大",
+    "zoomOut": "缩小",
+    "refresh": "刷新目录树",
+    "clickFileHint": "点击文件节点打开文档"
+  },
+  "presentation": {
+    "slides": "幻灯片",
+    "noSlides": "暂无幻灯片",
+    "empty": "请先在编辑器中打开文档",
+    "emptyHint": "支持 --- 水平分页，-- 垂直分页",
+    "prev": "上一张",
+    "next": "下一张",
+    "fullscreen": "全屏演示",
+    "exitFullscreen": "退出全屏"
+  },
+  "editor": {
+    "directory": "目录",
+    "document": "文档",
+    "documentEmpty": "请选择或新建文档",
+    "newDocumentHint": "点击此处新建文档",
+    "untitled": "未命名",
+    "addFolder": "添加文件夹",
+    "addFolderHint": "点击添加文件夹",
+    "removeFolder": "移除文件夹",
+    "selectFolderFirst": "请先选择目录",
+    "noFiles": "暂无 Markdown 文件",
+    "unsaved": "未保存",
+    "noDocument": "未打开文档",
+    "chars": "字符",
+    "toolbar": {
+      "h1": "一级标题",
+      "h2": "二级标题",
+      "h3": "三级标题",
+      "bold": "粗体 (⌘B)",
+      "italic": "斜体 (⌘I)",
+      "underline": "下划线 (⌘U)",
+      "strike": "删除线",
+      "code": "行内代码",
+      "codeBlock": "代码块",
+      "blockquote": "引用",
+      "bulletList": "无序列表",
+      "orderedList": "有序列表",
+      "horizontalRule": "分割线",
+      "newFile": "新建文档",
+      "save": "保存"
+    }
   }
 }

@@ -1,21 +1,19 @@
 /**
  * 路由配置文件
  * 定义应用的路由结构和导航规则
+ *
+ * 布局说明：
+ * - /document : 文档模式，左侧根据 viewMode store 切换编辑器/脑图，右侧固定知识库
+ * - /presentation : 演示模式，独立全屏布局
  */
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import AppLayout from '@/layouts/AppLayout';
 import DocumentLayout from '@/layouts/DocumentLayout';
 import PresentationLayout from '@/layouts/PresentationLayout';
-import EditorView from '@/features/editor';
-import MindmapView from '@/features/mindmap';
 import PresentationView from '@/features/presentation';
+import SettingsView from '@/features/settings';
+import TestDragComponent from '@/components/TestDragComponent';
 
-/**
- * 应用路由配置
- * - / : 根路径，重定向到文档编辑器
- * - /document : 文档模式，包含编辑器和脑图视图
- * - /presentation : 演示模式
- */
 export const router = createBrowserRouter([
   {
     path: '/',
@@ -23,23 +21,19 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Navigate to="/document/editor" replace />,
+        element: <Navigate to="/document" replace />,
       },
       {
+        // 文档模式：editor / mindmap 视图由 DocumentLayout 内部通过 viewMode store 控制
         path: 'document',
         element: <DocumentLayout />,
-        children: [
-          {
-            path: 'editor',
-            element: <EditorView />,
-          },
-          {
-            path: 'mindmap',
-            element: <MindmapView />,
-          },
-        ],
       },
       {
+        path: 'settings',
+        element: <SettingsView />,
+      },
+      {
+        // 演示模式：独立全屏布局
         path: 'presentation',
         element: <PresentationLayout />,
         children: [
@@ -48,6 +42,11 @@ export const router = createBrowserRouter([
             element: <PresentationView />,
           },
         ],
+      },
+      {
+        // 测试分隔条拖拽功能
+        path: 'test-drag',
+        element: <TestDragComponent />,
       },
     ],
   },

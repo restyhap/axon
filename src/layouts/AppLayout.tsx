@@ -1,5 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import { Footer } from '@/components/layout/Footer';
 
 /**
  * 应用根布局
@@ -7,8 +8,11 @@ import { Outlet } from 'react-router-dom';
  */
 const AppLayout: React.FC = () => {
   return (
-    <div className="h-screen w-screen overflow-hidden bg-background shadow-[inset_0_-1px_0_0_var(--border)] ">
-      <Outlet />
+    <div className="h-screen w-screen overflow-hidden flex flex-col bg-background">
+      <div className="flex-1 min-h-0 overflow-hidden">
+        <Outlet />
+      </div>
+      <Footer />
     </div>
   );
 };

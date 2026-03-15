@@ -2,7 +2,7 @@
  * 演示布局组件
  * 提供全屏演示模式布局，顶部可拖动调整与文档布局同步
  */
-import React, { useCallback, useEffect } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '@/components/ui/resizable';
 import { useResizableStore } from '@/stores/resizable';
@@ -16,6 +16,10 @@ const PresentationLayout: React.FC = () => {
   const { panelWidth: leftPanelWidth, panelRef: leftPanelRef } = usePanelWidth();
   const { panelWidth: containerWidth, panelRef: containerRef } = usePanelWidth();
   const leftMinSize = containerWidth > 0 && containerWidth * 0.5 < 240 ? '50%' : 240;
+  
+  // 控制分割线显示状态
+  const [isResizing, setIsResizing] = useState(false);
+  const [isHovering, setIsHovering] = useState(false);
 
   const handleLayoutChange = useCallback(
     (layout: { [id: string]: number }) => {
@@ -56,7 +60,7 @@ const PresentationLayout: React.FC = () => {
   }, [containerWidth, savedSizes.leftSize, savedSizes.rightSize, setLayoutSizes]);
 
   return (
-    <div className="relative h-screen w-screen bg-background">
+    <div className="relative h-full w-screen bg-background">
       {/* 顶部可拖动区域 - 只有标题栏高度 */}
       <div className="absolute top-0 left-0 right-0 z-50 h-8 overflow-visible">
         <div ref={containerRef} className="h-full">
@@ -78,10 +82,20 @@ const PresentationLayout: React.FC = () => {
               </div>
             </ResizablePanel>
 
-            <ResizableHandle 
-              withHandle 
-              className="h-8 opacity-0 hover:opacity-100 transition-opacity" 
-            />
+            {/* 自定义分割线 - 仅在 hover 和拖拽时显示 */}
+            <div
+              className="relative flex w-1 items-center justify-center cursor-col-resize"
+              onMouseEnter={() => setIsHovering(true)}
+              onMouseLeave={() => setIsHovering(false)}
+            >
+              <ResizableHandle
+                withHandle
+                className={`h-8 transition-opacity duration-150 ${
+                  isHovering || isResizing ? 'opacity-100' : 'opacity-0'
+                }`}
+                onDragging={(isDragging) => setIsResizing(isDragging)}
+              />
+            </div>
 
             {/* 右侧：空白（与左侧对齐） */}
             <ResizablePanel id="right" minSize="50%" className="h-full">

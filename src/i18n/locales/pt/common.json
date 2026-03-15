@@ -10,10 +10,62 @@
   "view": {
     "editor": "Editor",
     "mindmap": "Mapa mental",
-    "presentation": "Apresentação"
+    "presentation": "Apresentação",
+    "knowledgeBase": "Base de conhecimento"
   },
   "layout": {
     "navigation": "Navegação",
     "footer": "Rodapé"
+  },
+  "mindmap": {
+    "empty": "Clique para adicionar uma pasta de base de conhecimento",
+    "addFolderHint": "O mapa mental exibirá a estrutura completa de diretórios",
+    "fit": "Ajustar à visualização",
+    "zoomIn": "Ampliar",
+    "zoomOut": "Reduzir",
+    "refresh": "Atualizar árvore de diretórios",
+    "clickFileHint": "Clique em um nó de arquivo para abrir o documento"
+  },
+  "presentation": {
+    "slides": "Slides",
+    "noSlides": "Sem slides",
+    "empty": "Abra primeiro um documento no editor",
+    "emptyHint": "Use --- para páginas horizontais e -- para verticais",
+    "prev": "Slide anterior",
+    "next": "Próximo slide",
+    "fullscreen": "Tela cheia",
+    "exitFullscreen": "Sair da tela cheia"
+  },
+  "editor": {
+    "directory": "Diretório",
+    "document": "Documento",
+    "documentEmpty": "Selecione ou crie um documento",
+    "newDocumentHint": "Clique aqui para criar um novo documento",
+    "untitled": "Sem título",
+    "addFolder": "Adicionar pasta",
+    "addFolderHint": "Clique para adicionar",
+    "removeFolder": "Remover pasta",
+    "selectFolderFirst": "Selecione um diretório primeiro",
+    "noFiles": "Nenhum arquivo Markdown",
+    "unsaved": "Não salvo",
+    "noDocument": "Nenhum documento aberto",
+    "chars": "caracteres",
+    "toolbar": {
+      "h1": "Título 1",
+      "h2": "Título 2",
+      "h3": "Título 3",
+      "bold": "Negrito (⌘B)",
+      "italic": "Itálico (⌘I)",
+      "underline": "Sublinhado (⌘U)",
+      "strike": "Riscado",
+      "code": "Código em linha",
+      "codeBlock": "Bloco de código",
+      "blockquote": "Citação",
+      "bulletList": "Lista com marcadores",
+      "orderedList": "Lista numerada",
+      "horizontalRule": "Linha horizontal",
+      "newFile": "Novo documento",
+      "save": "Salvar"
+    }
   }
 }

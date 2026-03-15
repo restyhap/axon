@@ -10,6 +10,9 @@
     "tauri": "tauri dev"
   },
   "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
     "@fontsource-variable/geist": "^5.2.8",
     "@hookform/resolvers": "^5.2.2",
     "@tailwindcss/vite": "^4.2.1",
@@ -40,9 +43,12 @@
     "react-i18next": "^16.5.8",
     "react-resizable-panels": "^4.7.2",
     "react-router-dom": "^7.13.1",
+    "rehype-parse": "^9.0.1",
+    "rehype-remark": "^10.0.1",
     "rehype-stringify": "^10.0.1",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.2",
+    "remark-stringify": "^11.0.0",
     "reveal.js": "^5.2.1",
     "tailwind-merge": "^3.5.0",
     "tailwindcss": "^4.2.1",

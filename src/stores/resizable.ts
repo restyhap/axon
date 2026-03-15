@@ -70,13 +70,22 @@ export const useResizableStore = create<ResizableState>()(
       setLayoutSizes: (id, sizes) =>
         set((state) => {
           if (state.isSync) {
+            // 编辑器布局不参与同步，保持独立
+            if (id === 'editor') {
+              return {
+                layouts: {
+                  ...state.layouts,
+                  [id]: sizes,
+                },
+              };
+            }
             return {
               layouts: {
                 app: sizes,
                 document: sizes,
                 presentation: sizes,
-                editor: sizes,
                 mindmap: sizes,
+                editor: state.layouts.editor, // 保持编辑器布局不变
               },
             };
           }

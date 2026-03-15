@@ -1,15 +1,18 @@
 /**
  * 视图切换器组件
  * 提供编辑、脑图、演示三种视图模式的切换
+ * - editor / mindmap：更新 viewMode store，左侧导航区内容随之切换
+ * - presentation：跳转到演示路由（独立布局）
  * 支持紧凑模式（下拉菜单）和常规模式（按钮组）
  */
 import React, { useState, useCallback, useRef, useEffect, useMemo } from 'react';
 import { createPortal } from 'react-dom';
 import { Menu, FileText, Brain, Presentation } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Link, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { useTranslation } from 'react-i18next';
+import { useDocumentStore } from '@/stores/document';
 
 /** 视图切换器属性 */
 interface ViewSwitcherProps {
@@ -21,6 +24,10 @@ interface ViewSwitcherProps {
 /** 视图切换器组件 */
 export const ViewSwitcher: React.FC<ViewSwitcherProps> = ({ isCompact = false, onExpandedWidthChange }) => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { viewMode, setViewMode } = useDocumentStore();
+
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownPosition, setDropdownPosition] = useState({ top: 0, right: 0 });
   const [dropdownWidth, setDropdownWidth] = useState(0);
@@ -28,20 +35,46 @@ export const ViewSwitcher: React.FC<ViewSwitcherProps> = ({ isCompact = false, o
   const menuRef = useRef<HTMLDivElement>(null);
   const measureRef = useRef<HTMLDivElement>(null);
   const dropdownMeasureRef = useRef<HTMLDivElement>(null);
-  const location = useLocation();
 
-  // 根据当前路由确定活动视图
-  const isEditor = location.pathname.includes('/editor');
-  const isMindmap = location.pathname.includes('/mindmap');
-  const isPresentation = location.pathname.includes('/presentation');
+  // 演示模式通过路由判断，editor/mindmap 通过 viewMode store 判断
+  const isPresentation = location.pathname.startsWith('/presentation');
+  const isEditor = !isPresentation && viewMode === 'editor';
+  const isMindmap = !isPresentation && viewMode === 'mindmap';
 
   const items = useMemo(
     () => [
-      { to: '/document/editor', labelKey: 'editor', Icon: FileText, active: isEditor },
-      { to: '/document/mindmap', labelKey: 'mindmap', Icon: Brain, active: isMindmap },
-      { to: '/presentation', labelKey: 'presentation', Icon: Presentation, active: isPresentation },
+      {
+        labelKey: 'editor',
+        Icon: FileText,
+        active: isEditor,
+        onClick: () => {
+          setViewMode('editor');
+          // 如果当前在演示路由，切回文档路由
+          if (isPresentation) navigate('/document');
+          setIsOpen(false);
+        },
+      },
+      {
+        labelKey: 'mindmap',
+        Icon: Brain,
+        active: isMindmap,
+        onClick: () => {
+          setViewMode('mindmap');
+          if (isPresentation) navigate('/document');
+          setIsOpen(false);
+        },
+      },
+      {
+        labelKey: 'presentation',
+        Icon: Presentation,
+        active: isPresentation,
+        onClick: () => {
+          navigate('/presentation');
+          setIsOpen(false);
+        },
+      },
     ],
-    [isEditor, isMindmap, isPresentation]
+    [isEditor, isMindmap, isPresentation, navigate, setViewMode]
   );
 
   useEffect(() => {
@@ -83,12 +116,11 @@ export const ViewSwitcher: React.FC<ViewSwitcherProps> = ({ isCompact = false, o
   // 点击外部关闭
   useEffect(() => {
     if (!isOpen) return;
-    
+
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as Node;
-      // 只有点击按钮和菜单之外的地方才关闭
       if (
-        buttonRef.current && 
+        buttonRef.current &&
         !buttonRef.current.contains(target) &&
         menuRef.current &&
         !menuRef.current.contains(target)
@@ -96,7 +128,7 @@ export const ViewSwitcher: React.FC<ViewSwitcherProps> = ({ isCompact = false, o
         setIsOpen(false);
       }
     };
-    
+
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [isOpen]);
@@ -104,9 +136,9 @@ export const ViewSwitcher: React.FC<ViewSwitcherProps> = ({ isCompact = false, o
   const expandedMeasure = (
     <div ref={measureRef} aria-hidden="true" className="absolute -z-10 opacity-0 pointer-events-none left-0 top-0">
       <div className="flex items-center gap-1">
-        {items.map(({ to, labelKey, Icon }) => (
+        {items.map(({ labelKey, Icon }) => (
           <div
-            key={to}
+            key={labelKey}
             className="inline-flex items-center gap-1.5 h-7 px-3 whitespace-nowrap rounded-md text-[0.8rem] font-medium"
           >
             <Icon size={14} /> {t(`view.${labelKey}`)}
@@ -124,9 +156,9 @@ export const ViewSwitcher: React.FC<ViewSwitcherProps> = ({ isCompact = false, o
         className="fixed -z-10 opacity-0 pointer-events-none left-0 top-0"
       >
         <div className="inline-flex flex-col p-1 rounded-[10px] border border-[color:var(--menu-border)] bg-popover/90">
-          {items.map(({ to, labelKey, Icon }) => (
+          {items.map(({ labelKey, Icon }) => (
             <div
-              key={to}
+              key={labelKey}
               className="flex items-center gap-2 h-6 px-3 text-[13px] leading-[22px] rounded-[6px] whitespace-nowrap"
             >
               <Icon size={14} /> {t(`view.${labelKey}`)}
@@ -157,41 +189,41 @@ export const ViewSwitcher: React.FC<ViewSwitcherProps> = ({ isCompact = false, o
                   width: dropdownWidth ? `${dropdownWidth}px` : undefined,
                 }}
               >
-                {items.map(({ to, labelKey, Icon, active }) => (
-                  <Link
-                    key={to}
-                    to={to}
+                {items.map(({ labelKey, Icon, active, onClick }) => (
+                  <button
+                    key={labelKey}
+                    type="button"
+                    onClick={onClick}
                     className={cn(
-                      'flex items-center gap-2 h-6 px-3 text-[13px] leading-[22px] rounded-[6px] transition-colors select-none',
+                      'flex items-center gap-2 h-6 px-3 text-[13px] leading-[22px] rounded-[6px] transition-colors select-none w-full text-left',
                       active
                         ? 'bg-[var(--menu-highlight)] text-[var(--menu-highlight-foreground)]'
                         : 'hover:bg-[var(--menu-hover)] hover:text-foreground'
                     )}
-                    onClick={() => setIsOpen(false)}
                   >
                     <Icon size={14} /> {t(`view.${labelKey}`)}
-                  </Link>
+                  </button>
                 ))}
               </div>,
               document.body
             )}
         </>
       ) : (
-        items.map(({ to, labelKey, Icon, active }) => (
-          <Link key={to} to={to}>
-            <Button
-              variant="ghost"
-              size="sm"
-              className={cn(
-                'gap-1.5 h-7 px-3 whitespace-nowrap rounded-md transition-colors',
-                active
-                  ? 'bg-primary text-primary-foreground hover:bg-primary/90'
-                  : 'hover:bg-accent hover:text-accent-foreground'
-              )}
-            >
-              <Icon size={14} /> {t(`view.${labelKey}`)}
-            </Button>
-          </Link>
+        items.map(({ labelKey, Icon, active, onClick }) => (
+          <Button
+            key={labelKey}
+            variant="ghost"
+            size="sm"
+            onClick={onClick}
+            className={cn(
+              'gap-1.5 h-7 px-3 whitespace-nowrap rounded-md transition-colors',
+              active
+                ? 'bg-primary text-primary-foreground hover:bg-primary/90'
+                : 'hover:bg-accent hover:text-accent-foreground'
+            )}
+          >
+            <Icon size={14} /> {t(`view.${labelKey}`)}
+          </Button>
         ))
       )}
     </div>

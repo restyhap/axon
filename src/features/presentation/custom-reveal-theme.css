@@ -1,0 +1,109 @@
+/*
+ * 自定义 reveal.js 主题样式
+ * 跟随应用的浅色/深色主题
+ */
+
+:root {
+  /* 浅色主题 */
+  --reveal-bg: var(--background);
+  --reveal-text: var(--foreground);
+  --reveal-link: var(--primary);
+  --reveal-link-hover: var(--primary-active);
+  --reveal-separator: var(--border);
+  --reveal-controls: var(--muted-foreground);
+  --reveal-controls-hover: var(--foreground);
+  --reveal-progress: var(--primary);
+  --reveal-slide-number: var(--muted-foreground);
+}
+
+.dark {
+  /* 深色主题 */
+  --reveal-bg: var(--background);
+  --reveal-text: var(--foreground);
+  --reveal-link: var(--primary);
+  --reveal-link-hover: var(--primary-active);
+  --reveal-separator: var(--border);
+  --reveal-controls: var(--muted-foreground);
+  --reveal-controls-hover: var(--foreground);
+  --reveal-progress: var(--primary);
+  --reveal-slide-number: var(--muted-foreground);
+}
+
+/* 覆盖 reveal.js 默认样式 */
+.reveal {
+  background: var(--reveal-bg) !important;
+  color: var(--reveal-text) !important;
+}
+
+.reveal a {
+  color: var(--reveal-link) !important;
+}
+
+.reveal a:hover {
+  color: var(--reveal-link-hover) !important;
+  text-shadow: none !important;
+}
+
+.reveal .controls {
+  color: var(--reveal-controls) !important;
+}
+
+.reveal .controls:hover {
+  color: var(--reveal-controls-hover) !important;
+}
+
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.reveal .progress span {
+  background: var(--reveal-progress) !important;
+}
+
+.reveal .slide-number {
+  color: var(--reveal-slide-number) !important;
+}
+
+/* 确保幻灯片内容继承主题颜色 */
+.reveal section {
+  color: var(--reveal-text) !important;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  color: var(--reveal-text) !important;
+}
+
+/* 代码块样式 */
+.reveal pre code {
+  background: var(--card) !important;
+  color: var(--card-foreground) !important;
+  border: 1px solid var(--border) !important;
+}
+
+/* 列表样式 */
+.reveal ul li,
+.reveal ol li {
+  color: var(--reveal-text) !important;
+}
+
+/* 引用样式 */
+.reveal blockquote {
+  border-left: 4px solid var(--primary) !important;
+  color: var(--muted-foreground) !important;
+}
+
+/* 表格样式 */
+.reveal table th,
+.reveal table td {
+  border-color: var(--border) !important;
+  color: var(--reveal-text) !important;
+}
+
+.reveal table th {
+  background: var(--accent) !important;
+}

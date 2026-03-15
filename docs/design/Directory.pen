@@ -1,0 +1,1511 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "prototype-1-collapsed",
+      "x": 0,
+      "y": 0,
+      "name": "原型1-经典树形结构-关闭状态",
+      "clip": true,
+      "width": 260,
+      "height": 300,
+      "fill": "#F5F5F7",
+      "stroke": {
+        "thickness": 1,
+        "fill": "#E5E5E5"
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "p1-c-header",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 36,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "thickness": { "bottom": 1 },
+            "fill": "#E5E5E5"
+          },
+          "padding": [0, 12],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "p1-c-title",
+              "fill": "#666666",
+              "content": "📁 文档目录",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "p1-c-tree",
+          "name": "TreeContent",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 2,
+          "padding": [8, 12],
+          "children": [
+            {
+              "type": "text",
+              "id": "p1-c-item1",
+              "fill": "#333333",
+              "content": "📁 2024-2025学年",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p1-c-item2",
+              "fill": "#333333",
+              "content": "📁 编程学习",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p1-c-item3",
+              "fill": "#333333",
+              "content": "📁 项目文档",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p1-c-item4",
+              "fill": "#333333",
+              "content": "📁 读书笔记",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "prototype-1-expanded",
+      "x": 280,
+      "y": 0,
+      "name": "原型1-经典树形结构-展开状态",
+      "clip": true,
+      "width": 260,
+      "height": 300,
+      "fill": "#F5F5F7",
+      "stroke": {
+        "thickness": 1,
+        "fill": "#E5E5E5"
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "p1-e-header",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 36,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "thickness": { "bottom": 1 },
+            "fill": "#E5E5E5"
+          },
+          "padding": [0, 12],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "p1-e-title",
+              "fill": "#666666",
+              "content": "📁 文档目录",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "p1-e-tree",
+          "name": "TreeContent",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 2,
+          "padding": [8, 12],
+          "children": [
+            {
+              "type": "text",
+              "id": "p1-e-root1",
+              "fill": "#333333",
+              "content": "📂 2024-2025学年",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "p1-e-sub1",
+              "fill": "#333333",
+              "content": "  📂 第一学期",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "p1-e-file1",
+              "fill": "#666666",
+              "content": "    📄 课程安排.md",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p1-e-file2",
+              "fill": "#666666",
+              "content": "    📄 学习计划.md",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p1-e-root2",
+              "fill": "#333333",
+              "content": "📂 编程学习",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "p1-e-sub2",
+              "fill": "#333333",
+              "content": "  📂 Python",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "p1-e-file3",
+              "fill": "#666666",
+              "content": "    📄 基础语法.md",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p1-e-item3",
+              "fill": "#333333",
+              "content": "📁 项目文档",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p1-e-item4",
+              "fill": "#333333",
+              "content": "📁 读书笔记",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "prototype-2-collapsed",
+      "x": 560,
+      "y": 0,
+      "name": "原型2-工作区分层结构-关闭状态",
+      "clip": true,
+      "width": 260,
+      "height": 300,
+      "fill": "#F5F5F7",
+      "stroke": {
+        "thickness": 1,
+        "fill": "#E5E5E5"
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "p2-c-workspace-list",
+          "name": "WorkspaceList",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [12, 12],
+          "children": [
+            {
+              "type": "frame",
+              "id": "p2-c-ws1",
+              "name": "Workspace1",
+              "width": "fill_container",
+              "height": 60,
+              "fill": "#FFFFFF",
+              "cornerRadius": 8,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E5E5E5"
+              },
+              "padding": [8, 12],
+              "layout": "vertical",
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p2-c-ws1-name",
+                  "fill": "#333333",
+                  "content": "💼 工作项目",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "p2-c-ws1-count",
+                  "fill": "#666666",
+                  "content": "12 个文档",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "p2-c-ws2",
+              "name": "Workspace2",
+              "width": "fill_container",
+              "height": 60,
+              "fill": "#FFFFFF",
+              "cornerRadius": 8,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E5E5E5"
+              },
+              "padding": [8, 12],
+              "layout": "vertical",
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p2-c-ws2-name",
+                  "fill": "#333333",
+                  "content": "📚 学习笔记",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "p2-c-ws2-count",
+                  "fill": "#666666",
+                  "content": "8 个文档",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "p2-c-ws3",
+              "name": "Workspace3",
+              "width": "fill_container",
+              "height": 60,
+              "fill": "#FFFFFF",
+              "cornerRadius": 8,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E5E5E5"
+              },
+              "padding": [8, 12],
+              "layout": "vertical",
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p2-c-ws3-name",
+                  "fill": "#333333",
+                  "content": "🏠 个人生活",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "p2-c-ws3-count",
+                  "fill": "#666666",
+                  "content": "5 个文档",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "prototype-2-expanded",
+      "x": 840,
+      "y": 0,
+      "name": "原型2-工作区分层结构-展开状态",
+      "clip": true,
+      "width": 260,
+      "height": 300,
+      "fill": "#F5F5F7",
+      "stroke": {
+        "thickness": 1,
+        "fill": "#E5E5E5"
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "p2-e-header",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#007AFF",
+          "padding": [0, 12],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "p2-e-title",
+              "fill": "#FFFFFF",
+              "content": "💼 工作项目",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "p2-e-content",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 2,
+          "padding": [8, 12],
+          "children": [
+            {
+              "type": "text",
+              "id": "p2-e-folder1",
+              "fill": "#333333",
+              "content": "📂 项目A",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "p2-e-file1",
+              "fill": "#666666",
+              "content": "  📄 需求文档.md",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p2-e-file2",
+              "fill": "#666666",
+              "content": "  📄 设计方案.md",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p2-e-folder2",
+              "fill": "#333333",
+              "content": "📂 项目B",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "p2-e-file3",
+              "fill": "#666666",
+              "content": "  📄 会议记录.md",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p2-e-file4",
+              "fill": "#666666",
+              "content": "  📄 进度报告.md",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p2-e-file5",
+              "fill": "#666666",
+              "content": "📄 工作日志.md",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "prototype-3-collapsed",
+      "x": 0,
+      "y": 320,
+      "name": "原型3-标签页式目录-关闭状态",
+      "clip": true,
+      "width": 260,
+      "height": 300,
+      "fill": "#F5F5F7",
+      "stroke": {
+        "thickness": 1,
+        "fill": "#E5E5E5"
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "p3-c-tabs",
+          "name": "Tabs",
+          "width": "fill_container",
+          "height": 36,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "thickness": { "bottom": 1 },
+            "fill": "#E5E5E5"
+          },
+          "padding": [0, 8],
+          "gap": 4,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "p3-c-tab1",
+              "name": "Tab1",
+              "width": 70,
+              "height": 28,
+              "fill": "#007AFF",
+              "cornerRadius": 6,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p3-c-tab1-label",
+                  "fill": "#FFFFFF",
+                  "content": "全部",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "p3-c-tab2",
+              "name": "Tab2",
+              "width": 70,
+              "height": 28,
+              "fill": "#E5E5E5",
+              "cornerRadius": 6,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p3-c-tab2-label",
+                  "fill": "#666666",
+                  "content": "工作",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "p3-c-tab3",
+              "name": "Tab3",
+              "width": 70,
+              "height": 28,
+              "fill": "#E5E5E5",
+              "cornerRadius": 6,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p3-c-tab3-label",
+                  "fill": "#666666",
+                  "content": "学习",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "p3-c-content",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 2,
+          "padding": [8, 12],
+          "children": [
+            {
+              "type": "text",
+              "id": "p3-c-item1",
+              "fill": "#333333",
+              "content": "📄 项目计划.md",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p3-c-item2",
+              "fill": "#333333",
+              "content": "📄 学习笔记.md",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p3-c-item3",
+              "fill": "#333333",
+              "content": "📄 会议记录.md",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p3-c-item4",
+              "fill": "#333333",
+              "content": "📄 读书心得.md",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "prototype-3-expanded",
+      "x": 280,
+      "y": 320,
+      "name": "原型3-标签页式目录-展开状态",
+      "clip": true,
+      "width": 260,
+      "height": 300,
+      "fill": "#F5F5F7",
+      "stroke": {
+        "thickness": 1,
+        "fill": "#E5E5E5"
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "p3-e-tabs",
+          "name": "Tabs",
+          "width": "fill_container",
+          "height": 36,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "thickness": { "bottom": 1 },
+            "fill": "#E5E5E5"
+          },
+          "padding": [0, 8],
+          "gap": 4,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "p3-e-tab1",
+              "name": "Tab1",
+              "width": 70,
+              "height": 28,
+              "fill": "#E5E5E5",
+              "cornerRadius": 6,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p3-e-tab1-label",
+                  "fill": "#666666",
+                  "content": "全部",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "p3-e-tab2",
+              "name": "Tab2",
+              "width": 70,
+              "height": 28,
+              "fill": "#007AFF",
+              "cornerRadius": 6,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p3-e-tab2-label",
+                  "fill": "#FFFFFF",
+                  "content": "工作",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "p3-e-tab3",
+              "name": "Tab3",
+              "width": 70,
+              "height": 28,
+              "fill": "#E5E5E5",
+              "cornerRadius": 6,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p3-e-tab3-label",
+                  "fill": "#666666",
+                  "content": "学习",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "p3-e-content",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 2,
+          "padding": [8, 12],
+          "children": [
+            {
+              "type": "text",
+              "id": "p3-e-item1",
+              "fill": "#333333",
+              "content": "📄 项目计划.md",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p3-e-item2",
+              "fill": "#333333",
+              "content": "📄 需求文档.md",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p3-e-item3",
+              "fill": "#333333",
+              "content": "📄 会议记录.md",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p3-e-item4",
+              "fill": "#333333",
+              "content": "📄 工作日志.md",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "prototype-4-collapsed",
+      "x": 560,
+      "y": 320,
+      "name": "原型4-卡片式目录-关闭状态",
+      "clip": true,
+      "width": 260,
+      "height": 300,
+      "fill": "#F5F5F7",
+      "stroke": {
+        "thickness": 1,
+        "fill": "#E5E5E5"
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "p4-c-header",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 36,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "thickness": { "bottom": 1 },
+            "fill": "#E5E5E5"
+          },
+          "padding": [0, 12],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "p4-c-title",
+              "fill": "#666666",
+              "content": "📁 文档目录",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "p4-c-cards",
+          "name": "Cards",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [12, 12],
+          "children": [
+            {
+              "type": "frame",
+              "id": "p4-c-card1",
+              "name": "Card1",
+              "width": "fill_container",
+              "height": 60,
+              "fill": "#FFFFFF",
+              "cornerRadius": 8,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E5E5E5"
+              },
+              "padding": [8, 12],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p4-c-card1-icon",
+                  "fill": "#007AFF",
+                  "content": "📁",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "p4-c-card1-info",
+                  "name": "Info",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "padding": [0, 0, 0, 8],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "p4-c-card1-name",
+                      "fill": "#333333",
+                      "content": "编程学习",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "p4-c-card1-count",
+                      "fill": "#666666",
+                      "content": "8 个文档",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "p4-c-card2",
+              "name": "Card2",
+              "width": "fill_container",
+              "height": 60,
+              "fill": "#FFFFFF",
+              "cornerRadius": 8,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E5E5E5"
+              },
+              "padding": [8, 12],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p4-c-card2-icon",
+                  "fill": "#007AFF",
+                  "content": "📁",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "p4-c-card2-info",
+                  "name": "Info",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "padding": [0, 0, 0, 8],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "p4-c-card2-name",
+                      "fill": "#333333",
+                      "content": "项目文档",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "p4-c-card2-count",
+                      "fill": "#666666",
+                      "content": "12 个文档",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "p4-c-card3",
+              "name": "Card3",
+              "width": "fill_container",
+              "height": 60,
+              "fill": "#FFFFFF",
+              "cornerRadius": 8,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E5E5E5"
+              },
+              "padding": [8, 12],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p4-c-card3-icon",
+                  "fill": "#007AFF",
+                  "content": "📁",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "p4-c-card3-info",
+                  "name": "Info",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "padding": [0, 0, 0, 8],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "p4-c-card3-name",
+                      "fill": "#333333",
+                      "content": "读书笔记",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "p4-c-card3-count",
+                      "fill": "#666666",
+                      "content": "5 个文档",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "prototype-4-expanded",
+      "x": 840,
+      "y": 320,
+      "name": "原型4-卡片式目录-展开状态",
+      "clip": true,
+      "width": 260,
+      "height": 300,
+      "fill": "#F5F5F7",
+      "stroke": {
+        "thickness": 1,
+        "fill": "#E5E5E5"
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "p4-e-header",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 36,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "thickness": { "bottom": 1 },
+            "fill": "#E5E5E5"
+          },
+          "padding": [0, 12],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "p4-e-title",
+              "fill": "#666666",
+              "content": "📁 编程学习",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "p4-e-cards",
+          "name": "Cards",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 6,
+          "padding": [12, 12],
+          "children": [
+            {
+              "type": "frame",
+              "id": "p4-e-card1",
+              "name": "Card1",
+              "width": "fill_container",
+              "height": 50,
+              "fill": "#FFFFFF",
+              "cornerRadius": 8,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#007AFF"
+              },
+              "padding": [8, 12],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p4-e-card1-icon",
+                  "fill": "#007AFF",
+                  "content": "📄",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "p4-e-card1-name",
+                  "fill": "#333333",
+                  "content": "Python基础.md",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "p4-e-card2",
+              "name": "Card2",
+              "width": "fill_container",
+              "height": 50,
+              "fill": "#FFFFFF",
+              "cornerRadius": 8,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E5E5E5"
+              },
+              "padding": [8, 12],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p4-e-card2-icon",
+                  "fill": "#666666",
+                  "content": "📄",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "p4-e-card2-name",
+                  "fill": "#333333",
+                  "content": "数据结构.md",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "p4-e-card3",
+              "name": "Card3",
+              "width": "fill_container",
+              "height": 50,
+              "fill": "#FFFFFF",
+              "cornerRadius": 8,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E5E5E5"
+              },
+              "padding": [8, 12],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p4-e-card3-icon",
+                  "fill": "#666666",
+                  "content": "📄",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "p4-e-card3-name",
+                  "fill": "#333333",
+                  "content": "算法笔记.md",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "p4-e-card4",
+              "name": "Card4",
+              "width": "fill_container",
+              "height": 50,
+              "fill": "#FFFFFF",
+              "cornerRadius": 8,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E5E5E5"
+              },
+              "padding": [8, 12],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p4-e-card4-icon",
+                  "fill": "#666666",
+                  "content": "📄",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "p4-e-card4-name",
+                  "fill": "#333333",
+                  "content": "项目实战.md",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "prototype-5-collapsed",
+      "x": 0,
+      "y": 640,
+      "name": "原型5-双栏目录结构-关闭状态",
+      "clip": true,
+      "width": 260,
+      "height": 300,
+      "fill": "#F5F5F7",
+      "stroke": {
+        "thickness": 1,
+        "fill": "#E5E5E5"
+      },
+      "layout": "horizontal",
+      "children": [
+        {
+          "type": "frame",
+          "id": "p5-c-sidebar",
+          "name": "Sidebar",
+          "width": 80,
+          "height": "fill_container",
+          "fill": "#FFFFFF",
+          "stroke": {
+            "thickness": { "right": 1 },
+            "fill": "#E5E5E5"
+          },
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [8, 8],
+          "children": [
+            {
+              "type": "frame",
+              "id": "p5-c-nav1",
+              "name": "NavItem1",
+              "width": "fill_container",
+              "height": 36,
+              "fill": "#007AFF",
+              "cornerRadius": 6,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p5-c-nav1-icon",
+                  "fill": "#FFFFFF",
+                  "content": "📁",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "p5-c-nav2",
+              "name": "NavItem2",
+              "width": "fill_container",
+              "height": 36,
+              "fill": "#E5E5E5",
+              "cornerRadius": 6,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p5-c-nav2-icon",
+                  "fill": "#666666",
+                  "content": "📁",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "p5-c-nav3",
+              "name": "NavItem3",
+              "width": "fill_container",
+              "height": 36,
+              "fill": "#E5E5E5",
+              "cornerRadius": 6,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p5-c-nav3-icon",
+                  "fill": "#666666",
+                  "content": "📁",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "p5-c-content",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 2,
+          "padding": [8, 12],
+          "children": [
+            {
+              "type": "text",
+              "id": "p5-c-item1",
+              "fill": "#333333",
+              "content": "📄 Python基础.md",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p5-c-item2",
+              "fill": "#333333",
+              "content": "📄 数据结构.md",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p5-c-item3",
+              "fill": "#333333",
+              "content": "📄 算法笔记.md",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "prototype-5-expanded",
+      "x": 280,
+      "y": 640,
+      "name": "原型5-双栏目录结构-展开状态",
+      "clip": true,
+      "width": 260,
+      "height": 300,
+      "fill": "#F5F5F7",
+      "stroke": {
+        "thickness": 1,
+        "fill": "#E5E5E5"
+      },
+      "layout": "horizontal",
+      "children": [
+        {
+          "type": "frame",
+          "id": "p5-e-sidebar",
+          "name": "Sidebar",
+          "width": 80,
+          "height": "fill_container",
+          "fill": "#FFFFFF",
+          "stroke": {
+            "thickness": { "right": 1 },
+            "fill": "#E5E5E5"
+          },
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [8, 8],
+          "children": [
+            {
+              "type": "frame",
+              "id": "p5-e-nav1",
+              "name": "NavItem1",
+              "width": "fill_container",
+              "height": 36,
+              "fill": "#007AFF",
+              "cornerRadius": 6,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p5-e-nav1-icon",
+                  "fill": "#FFFFFF",
+                  "content": "📁",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "p5-e-nav2",
+              "name": "NavItem2",
+              "width": "fill_container",
+              "height": 36,
+              "fill": "#E5E5E5",
+              "cornerRadius": 6,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p5-e-nav2-icon",
+                  "fill": "#666666",
+                  "content": "📁",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "p5-e-nav3",
+              "name": "NavItem3",
+              "width": "fill_container",
+              "height": 36,
+              "fill": "#E5E5E5",
+              "cornerRadius": 6,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p5-e-nav3-icon",
+                  "fill": "#666666",
+                  "content": "📁",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "p5-e-content",
+          "name": "Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 2,
+          "padding": [8, 12],
+          "children": [
+            {
+              "type": "frame",
+              "id": "p5-e-folder",
+              "name": "Folder",
+              "width": "fill_container",
+              "height": 28,
+              "fill": "#F0F0F0",
+              "cornerRadius": 4,
+              "padding": [0, 8],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p5-e-folder-name",
+                  "fill": "#333333",
+                  "content": "📂 Python",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "p5-e-item1",
+              "fill": "#333333",
+              "content": "  📄 基础语法.md",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p5-e-item2",
+              "fill": "#333333",
+              "content": "  📄 面向对象.md",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p5-e-item3",
+              "fill": "#333333",
+              "content": "  📄 函数式编程.md",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "p5-e-item4",
+              "fill": "#333333",
+              "content": "  📄 异步编程.md",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

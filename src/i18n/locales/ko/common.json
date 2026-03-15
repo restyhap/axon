@@ -10,10 +10,62 @@
   "view": {
     "editor": "편집",
     "mindmap": "마인드맵",
-    "presentation": "발표"
+    "presentation": "발표",
+    "knowledgeBase": "지식 베이스"
   },
   "layout": {
     "navigation": "탐색",
     "footer": "푸터"
+  },
+  "mindmap": {
+    "empty": "지식 베이스 폴더를 추가하려면 클릭하세요",
+    "addFolderHint": "마인드맵이 전체 디렉토리 구조를 표시합니다",
+    "fit": "화면에 맞추기",
+    "zoomIn": "확대",
+    "zoomOut": "축소",
+    "refresh": "디렉토리 트리 새로고침",
+    "clickFileHint": "파일 노드를 클릭하여 문서 열기"
+  },
+  "presentation": {
+    "slides": "슬라이드",
+    "noSlides": "슬라이드 없음",
+    "empty": "먼저 편집기에서 문서를 여세요",
+    "emptyHint": "--- 수평 구분, -- 수직 구분 지원",
+    "prev": "이전 슬라이드",
+    "next": "다음 슬라이드",
+    "fullscreen": "전체 화면",
+    "exitFullscreen": "전체 화면 종료"
+  },
+  "editor": {
+    "directory": "디렉토리",
+    "document": "문서",
+    "documentEmpty": "문서를 선택하거나 만드세요",
+    "newDocumentHint": "여기를 클릭하여 새 문서를 만드세요",
+    "untitled": "제목 없음",
+    "addFolder": "폴더 추가",
+    "addFolderHint": "클릭하여 추가",
+    "removeFolder": "폴더 제거",
+    "selectFolderFirst": "먼저 디렉토리를 선택하세요",
+    "noFiles": "Markdown 파일 없음",
+    "unsaved": "저장되지 않음",
+    "noDocument": "열린 문서 없음",
+    "chars": "자",
+    "toolbar": {
+      "h1": "제목 1",
+      "h2": "제목 2",
+      "h3": "제목 3",
+      "bold": "굵게 (⌘B)",
+      "italic": "기울임 (⌘I)",
+      "underline": "밑줄 (⌘U)",
+      "strike": "취소선",
+      "code": "인라인 코드",
+      "codeBlock": "코드 블록",
+      "blockquote": "인용",
+      "bulletList": "글머리 목록",
+      "orderedList": "순서 목록",
+      "horizontalRule": "수평선",
+      "newFile": "새 문서",
+      "save": "저장"
+    }
   }
 }

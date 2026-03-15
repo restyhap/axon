@@ -10,10 +10,62 @@
   "view": {
     "editor": "Éditeur",
     "mindmap": "Carte mentale",
-    "presentation": "Présentation"
+    "presentation": "Présentation",
+    "knowledgeBase": "Base de connaissances"
   },
   "layout": {
     "navigation": "Navigation",
     "footer": "Pied de page"
+  },
+  "mindmap": {
+    "empty": "Cliquez pour ajouter un dossier de base de connaissances",
+    "addFolderHint": "La carte mentale affichera la structure complète des répertoires",
+    "fit": "Ajuster la vue",
+    "zoomIn": "Zoom avant",
+    "zoomOut": "Zoom arrière",
+    "refresh": "Actualiser l'arborescence",
+    "clickFileHint": "Cliquez sur un nœud fichier pour ouvrir le document"
+  },
+  "presentation": {
+    "slides": "Diapositives",
+    "noSlides": "Aucune diapositive",
+    "empty": "Ouvrez d'abord un document dans l'éditeur",
+    "emptyHint": "Utilisez --- pour les pages horizontales et -- pour les verticales",
+    "prev": "Diapositive précédente",
+    "next": "Diapositive suivante",
+    "fullscreen": "Plein écran",
+    "exitFullscreen": "Quitter le plein écran"
+  },
+  "editor": {
+    "directory": "Répertoire",
+    "document": "Document",
+    "documentEmpty": "Sélectionner ou créer un document",
+    "newDocumentHint": "Cliquez ici pour créer un nouveau document",
+    "untitled": "Sans titre",
+    "addFolder": "Ajouter un dossier",
+    "addFolderHint": "Cliquer pour ajouter",
+    "removeFolder": "Supprimer le dossier",
+    "selectFolderFirst": "Sélectionner d'abord un répertoire",
+    "noFiles": "Aucun fichier Markdown",
+    "unsaved": "Non enregistré",
+    "noDocument": "Aucun document ouvert",
+    "chars": "caractères",
+    "toolbar": {
+      "h1": "Titre 1",
+      "h2": "Titre 2",
+      "h3": "Titre 3",
+      "bold": "Gras (⌘B)",
+      "italic": "Italique (⌘I)",
+      "underline": "Souligné (⌘U)",
+      "strike": "Barré",
+      "code": "Code en ligne",
+      "codeBlock": "Bloc de code",
+      "blockquote": "Citation",
+      "bulletList": "Liste à puces",
+      "orderedList": "Liste numérotée",
+      "horizontalRule": "Ligne horizontale",
+      "newFile": "Nouveau document",
+      "save": "Enregistrer"
+    }
   }
 }

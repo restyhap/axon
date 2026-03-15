@@ -10,10 +10,62 @@
   "view": {
     "editor": "Editor",
     "mindmap": "Mindmap",
-    "presentation": "Präsentation"
+    "presentation": "Präsentation",
+    "knowledgeBase": "Wissensdatenbank"
   },
   "layout": {
     "navigation": "Navigation",
     "footer": "Fußzeile"
+  },
+  "mindmap": {
+    "empty": "Klicken Sie, um einen Wissensordner hinzuzufügen",
+    "addFolderHint": "Die Mindmap zeigt die vollständige Verzeichnisstruktur",
+    "fit": "Ansicht anpassen",
+    "zoomIn": "Vergrößern",
+    "zoomOut": "Verkleinern",
+    "refresh": "Verzeichnisbaum aktualisieren",
+    "clickFileHint": "Klicken Sie auf einen Dateiknoten, um das Dokument zu öffnen"
+  },
+  "presentation": {
+    "slides": "Folien",
+    "noSlides": "Keine Folien",
+    "empty": "Öffnen Sie zuerst ein Dokument im Editor",
+    "emptyHint": "Verwenden Sie --- für horizontale und -- für vertikale Folien",
+    "prev": "Vorherige Folie",
+    "next": "Nächste Folie",
+    "fullscreen": "Vollbild",
+    "exitFullscreen": "Vollbild beenden"
+  },
+  "editor": {
+    "directory": "Verzeichnis",
+    "document": "Dokument",
+    "documentEmpty": "Dokument auswählen oder erstellen",
+    "newDocumentHint": "Hier klicken um ein neues Dokument zu erstellen",
+    "untitled": "Unbenannt",
+    "addFolder": "Ordner hinzufügen",
+    "addFolderHint": "Klicken zum Hinzufügen",
+    "removeFolder": "Ordner entfernen",
+    "selectFolderFirst": "Zuerst Ordner auswählen",
+    "noFiles": "Keine Markdown-Dateien",
+    "unsaved": "Nicht gespeichert",
+    "noDocument": "Kein Dokument geöffnet",
+    "chars": "Zeichen",
+    "toolbar": {
+      "h1": "Überschrift 1",
+      "h2": "Überschrift 2",
+      "h3": "Überschrift 3",
+      "bold": "Fett (⌘B)",
+      "italic": "Kursiv (⌘I)",
+      "underline": "Unterstrichen (⌘U)",
+      "strike": "Durchgestrichen",
+      "code": "Inline-Code",
+      "codeBlock": "Codeblock",
+      "blockquote": "Zitat",
+      "bulletList": "Aufzählungsliste",
+      "orderedList": "Nummerierte Liste",
+      "horizontalRule": "Horizontale Linie",
+      "newFile": "Neues Dokument",
+      "save": "Speichern"
+    }
   }
 }

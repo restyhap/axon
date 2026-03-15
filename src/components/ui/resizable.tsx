@@ -32,19 +32,22 @@ function ResizablePanel({ ...props }: ResizablePrimitive.PanelProps) {
 function ResizableHandle({
   withHandle,
   className,
+  onDragging,
   ...props
 }: ResizablePrimitive.SeparatorProps & {
   /** 是否显示拖动手柄 */
   withHandle?: boolean
+  /** 拖拽状态回调 */
+  onDragging?: (isDragging: boolean) => void
 }) {
   return (
     <ResizablePrimitive.Separator
       data-slot="resizable-handle"
       className={cn(
-        "relative flex w-[2px] items-center justify-center aria-[orientation=horizontal]:h-[2px] aria-[orientation=horizontal]:w-full [&[aria-orientation=horizontal]>div]:rotate-90 cursor-col-resize aria-[orientation=horizontal]:cursor-row-resize outline-none focus:outline-none focus-visible:outline-none",
-        "bg-transparent",
+        "relative flex w-1 items-center justify-center aria-[orientation=horizontal]:h-1 aria-[orientation=horizontal]:w-full [&[aria-orientation=horizontal]>div]:rotate-90 cursor-col-resize aria-[orientation=horizontal]:cursor-row-resize outline-none focus:outline-none focus-visible:outline-none bg-border",
         className
       )}
+      {...(onDragging ? ({ onDragging } as any) : {})}
       {...props}
     >
       {withHandle && (

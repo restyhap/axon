@@ -10,10 +10,62 @@
   "view": {
     "editor": "Editor",
     "mindmap": "Mindmap",
-    "presentation": "Presentation"
+    "presentation": "Presentation",
+    "knowledgeBase": "Knowledge Base"
   },
   "layout": {
     "navigation": "Navigation",
     "footer": "Footer"
+  },
+  "mindmap": {
+    "empty": "Click to add a knowledge base folder",
+    "addFolderHint": "The mindmap will display the full directory structure",
+    "fit": "Fit to view",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "refresh": "Refresh directory tree",
+    "clickFileHint": "Click a file node to open document"
+  },
+  "presentation": {
+    "slides": "Slides",
+    "noSlides": "No slides",
+    "empty": "Open a document in the editor first",
+    "emptyHint": "Use --- for horizontal and -- for vertical slides",
+    "prev": "Previous slide",
+    "next": "Next slide",
+    "fullscreen": "Enter fullscreen",
+    "exitFullscreen": "Exit fullscreen"
+  },
+  "editor": {
+    "directory": "Directory",
+    "document": "Document",
+    "documentEmpty": "Select or create a document",
+    "newDocumentHint": "Click here to create a new document",
+    "untitled": "Untitled",
+    "addFolder": "Add folder",
+    "addFolderHint": "Click to add a folder",
+    "removeFolder": "Remove folder",
+    "selectFolderFirst": "Select a directory first",
+    "noFiles": "No Markdown files",
+    "unsaved": "Unsaved",
+    "noDocument": "No document open",
+    "chars": "chars",
+    "toolbar": {
+      "h1": "Heading 1",
+      "h2": "Heading 2",
+      "h3": "Heading 3",
+      "bold": "Bold (⌘B)",
+      "italic": "Italic (⌘I)",
+      "underline": "Underline (⌘U)",
+      "strike": "Strikethrough",
+      "code": "Inline code",
+      "codeBlock": "Code block",
+      "blockquote": "Blockquote",
+      "bulletList": "Bullet list",
+      "orderedList": "Ordered list",
+      "horizontalRule": "Horizontal rule",
+      "newFile": "New document",
+      "save": "Save"
+    }
   }
 }
